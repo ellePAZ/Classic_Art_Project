@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Eyes
+    uniqueID: 3858760685
+    locked: 0
+  - name: Painting
+    uniqueID: 380168585
+    locked: 0
+  - name: Visitor
+    uniqueID: 1381967563
+    locked: 0
