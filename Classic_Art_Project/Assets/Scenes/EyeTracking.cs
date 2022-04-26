@@ -4,10 +4,32 @@ using UnityEngine;
 
 public class EyeTracking : MonoBehaviour
 {
+    public float factor = 0.25f;
+    public float followFactor = 2.5f;
+    public float limit = 0.08f;
+
+    private Vector3 center;
+    private Vector3 followPos;
+
+    private void Start()
+    {
+        center = transform.position;
+    }
     private void Update()
     {
-        Vector3 targetDir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        float angle = (Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg) - 90f;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        //Convert mouse pointer to worldspace
+        Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        pos.z = 0.0f;
+
+        followPos = Vector3.Lerp(followPos, pos, Time.deltaTime * followFactor);
+
+        //Create a direction target based on mouse vector * factor
+        Vector3 dir = followPos * factor;
+
+        //Clamp the direction target
+        dir = Vector3.ClampMagnitude(dir, limit);
+
+        //Update pupil position
+        transform.position = center + dir;
     }
 }

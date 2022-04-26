@@ -165,7 +165,6 @@ GameObject:
   m_Component:
   - component: {fileID: 870463640}
   - component: {fileID: 870463641}
-  - component: {fileID: 870463642}
   m_Layer: 0
   m_Name: Eye2
   m_TagString: Untagged
@@ -239,18 +238,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &870463642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 870463639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4351caccbc1001f448cff4343b9ed649, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1073091418
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1321577707}
   - component: {fileID: 1321577709}
+  - component: {fileID: 1321577708}
   m_Layer: 0
   m_Name: Iris
   m_TagString: Untagged
@@ -307,12 +295,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321577706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.054, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 870463640}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1321577708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321577706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4351caccbc1001f448cff4343b9ed649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  factor: 0.25
+  followFactor: 2.5
+  limit: 0.15
 --- !u!212 &1321577709
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -374,6 +377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1749476335}
   - component: {fileID: 1749476337}
+  - component: {fileID: 1749476336}
   m_Layer: 0
   m_Name: Iris
   m_TagString: Untagged
@@ -389,12 +393,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749476334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.054, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 2063050258}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1749476336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749476334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4351caccbc1001f448cff4343b9ed649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  factor: 0.25
+  followFactor: 2.5
+  limit: 0.15
 --- !u!212 &1749476337
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -456,7 +475,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2063050258}
   - component: {fileID: 2063050259}
-  - component: {fileID: 2063050260}
   m_Layer: 0
   m_Name: Eye1
   m_TagString: Untagged
@@ -530,18 +548,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2063050260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063050257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4351caccbc1001f448cff4343b9ed649, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2085552820
 GameObject:
   m_ObjectHideFlags: 0
